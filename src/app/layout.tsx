@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import "@/mocks";
+
 import { MSWComponent } from "@/mocks/MSWComponent";
+import Menubar from "@/components/Menubar/Menubar";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +17,10 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body>
-        <MSWComponent>{children}</MSWComponent>
+        <MSWComponent>
+          <Menubar />
+          {children}
+        </MSWComponent>
       </body>
     </html>
   );

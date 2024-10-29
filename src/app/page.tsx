@@ -1,8 +1,9 @@
 "use client";
 
+import { Container } from "@mui/material";
+
 import { useEffect } from "react";
-import styles from "./page.module.css";
-import "@/mocks";
+import S from "./page.module.css";
 
 export default function Home() {
   useEffect(() => {
@@ -15,5 +16,5 @@ export default function Home() {
     })();
   }, []);
 
-  return <div className={styles.page}></div>;
+  return <Container className={S.container}></Container>;
 }
