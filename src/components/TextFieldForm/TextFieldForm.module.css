@@ -16,15 +16,7 @@
   justify-content: space-between;
 }
 
-.contents {
+.input {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.requireBox {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  padding-left: 6px;
 }

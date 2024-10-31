@@ -1,13 +1,15 @@
 import { Box, Container } from "@mui/material";
 import S from "./page.module.css";
 import React from "react";
-import TextBox from "@/components/TextBox/TextBox";
+import TextFieldForm from "@/components/TextFieldForm";
+import RadioForm from "@/components/RadioForm";
 
 const AddFormPage = () => {
   return (
     <Container className={S.container}>
       <Box className={S.form}>
-        <TextBox />
+        <TextFieldForm />
+        <RadioForm />
       </Box>
     </Container>
   );
