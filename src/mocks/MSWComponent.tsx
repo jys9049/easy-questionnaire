@@ -1,22 +1,21 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { PropsWithChildren, useEffect } from "react";
 
-export const MSWComponent = ({ children }: { children: React.ReactNode }) => {
-  const [mswReady, setMswReady] = useState(false);
+export const MSWComponent = ({ children }: PropsWithChildren) => {
   useEffect(() => {
-    const init = async () => {
-      const initMsw = await import("./index").then((res) => res.initMocks);
-      await initMsw();
-      setMswReady(true);
-    };
-
-    if (!mswReady) {
-      init();
+    if (typeof window === "undefined") {
+      (async () => {
+        const { server } = await import("@/mocks/server");
+        server.listen();
+      })();
+    } else {
+      (async () => {
+        const { worker } = await import("@/mocks/browser");
+        worker.start();
+      })();
     }
-  }, [mswReady]);
-
-  if (!mswReady) return;
+  });
 
   return <>{children}</>;
 };
