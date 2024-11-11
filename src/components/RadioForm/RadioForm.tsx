@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import FormWrapper from "../FormWrapper/FormWrapper";
-import S from "./RadioForm.module.scss";
+import S from "./RadioForm.module.css";
 import CloseIcon from "@mui/icons-material/Close";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import {
@@ -13,7 +13,7 @@ import {
   Radio,
   RadioGroup,
 } from "@mui/material";
-import { IRadioArrayTypes, IRadioFormProps } from "./RadioForm.types";
+import { IRadioFormProps } from "./RadioForm.types";
 
 const RadioForm = ({
   id,
