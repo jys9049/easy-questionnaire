@@ -32,6 +32,7 @@ const FormWrapper = ({
           placeholder="타이틀을 입력해주세요."
           value={titleInputValue}
           onChange={handleChange}
+          fullWidth
         />
         {children}
       </Box>

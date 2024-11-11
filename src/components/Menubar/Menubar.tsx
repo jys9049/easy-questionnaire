@@ -32,7 +32,11 @@ const Menubar = () => {
         <NoteAddIcon />
         <Typography variant="subtitle2">폼 생성하기</Typography>
       </Button>
-      <Button className={S.menuBtn} variant="outlined">
+      <Button
+        onClick={() => router.push("/list")}
+        className={S.menuBtn}
+        variant="outlined"
+      >
         <FormatListBulletedIcon />
         <Typography variant="subtitle2">폼 리스트</Typography>
       </Button>

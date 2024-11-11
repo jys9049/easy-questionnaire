@@ -23,7 +23,7 @@ const TextFieldForm = ({
       handleRemove={() => handleRemove}
       handleRequireChange={handleRequireChange}
     >
-      <TextField id={id} multiline onChange={handleChange} />
+      <TextField id={id} multiline onChange={handleChange} fullWidth />
     </FormWrapper>
   );
 };

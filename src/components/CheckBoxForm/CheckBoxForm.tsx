@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import FormWrapper from "../FormWrapper/FormWrapper";
 import { Box, Button, Checkbox, IconButton, Input } from "@mui/material";
-import { ICheckBoxArrayTypes, ICheckBoxProps } from "./CheckBoxForm.types";
+import { ICheckBoxProps } from "./CheckBoxForm.types";
 import CloseIcon from "@mui/icons-material/Close";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import S from "./CheckBoxForm.module.scss";
