@@ -41,6 +41,20 @@ jobs:
           target: ~/app/
 
       # 6. EC2에서 배포 스크립트 실행
+      - name: Install Dependencies on EC2
+        uses: appleboy/ssh-action@v0.1.7
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ubuntu
+          key: ${{ secrets.EC2_PRIVATE_KEY }}
+          script: |
+            # 필요한 패키지들 설치
+            sudo apt update
+            sudo apt install -y unzip
+            sudo apt install -y nodejs npm
+            sudo npm install pm2 -g
+
+      # 7. 배포 후 명령 실행
       - name: Deploy on EC2
         uses: appleboy/ssh-action@v0.1.7
         with:
