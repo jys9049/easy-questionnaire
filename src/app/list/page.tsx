@@ -3,7 +3,7 @@
 import { IFormDataTypes } from "@/types/form.types";
 import { Box } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import S from "./page.module.css";
+import S from "./page.module.scss";
 import FormCard from "@/components/FormCard";
 
 const ListPage = () => {

@@ -7,7 +7,7 @@ import NoteAddIcon from "@mui/icons-material/NoteAdd";
 import EqualizerIcon from "@mui/icons-material/Equalizer";
 import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
 
-import S from "./Menubar.module.css";
+import S from "./Menubar.module.scss";
 import { usePathname, useRouter } from "next/navigation";
 
 const Menubar = () => {

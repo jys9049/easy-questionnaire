@@ -2,7 +2,7 @@
 
 import React from "react";
 import FormWrapper from "../FormWrapper/FormWrapper";
-import S from "./RadioForm.module.css";
+import S from "./RadioForm.module.scss";
 import CloseIcon from "@mui/icons-material/Close";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import {

@@ -7,7 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
-import S from "./TextBox.module.css";
+import S from "./TextBox.module.scss";
 import React from "react";
 
 const TextBox = () => {

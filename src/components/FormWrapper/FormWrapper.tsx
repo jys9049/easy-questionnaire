@@ -2,7 +2,7 @@
 
 import { Box, IconButton, Input, Switch, Typography } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
-import S from "./FormWrapper.module.css";
+import S from "./FormWrapper.module.scss";
 import React from "react";
 import { IFormWrapperProps } from "./FormWrapper.types";
 
